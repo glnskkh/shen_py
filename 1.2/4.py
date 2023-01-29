@@ -3,7 +3,6 @@ def test_max():
 
 
 def max(x: list[int]):
-
     m = x[0]
 
     # Инвариант: m - максимальный элемент из x[0..k]
