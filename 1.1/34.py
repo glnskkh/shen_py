@@ -11,6 +11,9 @@ def test_compute():
 
 
 def compute(n: int):
+    """Рекурсивные вызовы выполняются лишь для базовых случаем, сложность O(logn)"""
+
+    # Базовые случаи
     if n == 0:
         return 13
     if n == 1:
@@ -21,8 +24,9 @@ def compute(n: int):
         return 30
 
     # f(n) = a*f(k) + b*f(k+1) + c*f(k+2)
-    a, b, c = 1, 0, 0
     k = n
+    a, b, c = 1, 0, 0
+
     while k > 2:
         if k % 2 == 0:
             a, b, c = 43 * a + 91 * b, 57 * a + 179 * b + 43 * c, 57 * c
