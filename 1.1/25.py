@@ -3,9 +3,9 @@
 def test_is_gaussian_prime():
     # Составные
     assert is_gaussian_prime(complex(2, 0)) == False
-    assert is_gaussian_prime(complex(4, 2)) == False
 
     # Простые
+    assert is_gaussian_prime(complex(4, 2)) == True
     assert is_gaussian_prime(complex(1, 1)) == True
     assert is_gaussian_prime(complex(1, 2)) == True
     assert is_gaussian_prime(complex(-4, 11)) == True
@@ -37,10 +37,10 @@ def is_gaussian_prime(c: complex):
 
 def test_factorize_gaussian():
     # Составные
-    assert len([i for i in factorize_gaussian(2, 0)]) == 2
+    assert len([i for i in factorize_gaussian(complex(2, 0))]) == 2
 
     # Простые
-    assert len([i for i in factorize_gaussian(-4, 11)]) == 1
+    assert len([i for i in factorize_gaussian(complex(-4, 11))]) == 1
 
 
 def factorize_gaussian(c: complex):
