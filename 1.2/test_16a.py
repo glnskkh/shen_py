@@ -5,13 +5,13 @@ def test_fast_mult():
 
 
 def bin_len(a: int):
-    l = 0
+    length = 0
 
     while a > 0:
         a >>= 1
-        l += 1
+        length += 1
 
-    return l
+    return length
 
 
 def fast_mult(a: int, b: int) -> int:
