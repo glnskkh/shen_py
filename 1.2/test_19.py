@@ -1,5 +1,5 @@
 def test_unincreasing_count():
-    assert unincreasing_count([5, 4, 3, 2, 1, 1], [4, 3, 1]) == 3
+    assert unincreasing_count([5, 4, 3, 2, 1, 1], [4, 3, 1]) == 6
 
 
 def unincreasing_count(a: list[int], b: list[int]) -> int:
@@ -24,4 +24,5 @@ def unincreasing_count(a: list[int], b: list[int]) -> int:
             while j < len(b) and b[j] == t:
                 j += 1
 
-    return k
+    # Это и есть число различных элеменов: число всех - число общих
+    return len(a) + len(b) - k
