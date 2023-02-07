@@ -6,7 +6,7 @@ def count_undecreacing(a: list[int], b: list[int]) -> int:
     k = 0
 
     # k - число одинаковых элементов в a[0..i] и b[0..j]
-    # a[i], b[j] - элементы, которых еще не встречалось
+    # a[i], b[j] - элементы, которые еще не встречалось
 
     i, j = 0, 0
 
@@ -18,6 +18,8 @@ def count_undecreacing(a: list[int], b: list[int]) -> int:
         else:
             k += 1
             t = a[i]
+
+            # просто пропускаем все элементы, равные данному
 
             while i < len(a) and a[i] == t:
                 i += 1
