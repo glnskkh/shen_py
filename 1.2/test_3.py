@@ -1,3 +1,6 @@
+""" Копируем массив src в dest за O(min(|src|, |dest|)) """
+
+
 def test_copy():
     # (1)
     src1 = [0, 0, 0]
