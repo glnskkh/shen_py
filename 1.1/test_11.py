@@ -1,3 +1,6 @@
+""" Ищем сумму ряда, образованного числами, обратными факториалам, сложность O(n^2) """
+
+
 def test_slow_rev_fact():
     assert 1.0 == slow_rev_fact(0)
     assert 1.0+1.0 == slow_rev_fact(1)

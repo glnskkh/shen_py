@@ -1,3 +1,14 @@
+"""
+Вычислим значения f, если известно, что
+f(0)=0
+f(1)=1
+f(2n)=f(n)
+f(2n+1)=f(n)+f(n+1)
+
+О(log2(n)) шагов
+"""
+
+
 def test_compute():
     assert compute(0) == 0
     assert compute(1) == 1

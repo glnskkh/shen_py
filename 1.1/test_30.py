@@ -1,3 +1,6 @@
+""" Деление едицницы на n с точностью pers, O(pers) операций деления """
+
+
 def test_inversed():
     assert inversed(2, 2) == "0.50"
 

@@ -1,3 +1,6 @@
+""" Проверяем, является ли число простым за O(sqrtn) делений с остатком """
+
+
 def test_is_prime():
     assert is_prime(11) == True
     assert is_prime(7) == True

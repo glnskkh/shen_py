@@ -1,3 +1,6 @@
+""" Нахождение НОД и НОК за O(logn) """
+
+
 def test_gcd_deikstra():
     # 2 * LCD(12, 36) == 72
     assert gcd_deikstra(12, 36) == 72

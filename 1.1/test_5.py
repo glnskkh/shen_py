@@ -1,3 +1,6 @@
+""" Перемножим два целых числа a и b за O(b) сложений """
+
+
 def test_mult():
     assert mult(2, 2) == 4
     assert mult(3, 2) == 6

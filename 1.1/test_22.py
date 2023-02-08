@@ -1,3 +1,6 @@
+""" Разложим число на простые множители, сложность примерно O(n) """
+
+
 def test_factorize():
     assert [i for i in factorize(12)] == [2, 2, 3]
     assert [i for i in factorize(1000)] == [2, 2, 2, 5, 5, 5]

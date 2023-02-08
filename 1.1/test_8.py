@@ -1,3 +1,6 @@
+""" Вычисляем факториал числа n за O(n) шагов """
+
+
 def test_fact():
     assert fact(3) == 6
     assert fact(0) == 1

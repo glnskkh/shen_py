@@ -1,3 +1,6 @@
+""" Определим период дроби 1/n, O(2n + 1) """
+
+
 def test_inv_period():
     assert inv_period(2) == 1
     assert inv_period(3) == 1

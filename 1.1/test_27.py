@@ -1,3 +1,6 @@
+""" Разворот целого числа n за O(logn) шагов """
+
+
 def test_reverse_decimal():
     assert reverse_decimal(341) == "143"
     assert reverse_decimal(100000) == "000001"

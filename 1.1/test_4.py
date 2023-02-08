@@ -1,3 +1,6 @@
+""" Возведем целое число в целую степень за O(logn) """
+
+
 def test_power():
     assert power(2, 2) == 4
     assert power(12, 2) == 144

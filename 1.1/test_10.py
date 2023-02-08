@@ -1,3 +1,6 @@
+""" Находим n число фиббоначи за O(logn) шагов """
+
+
 def test_fast_fib():
     assert fast_fib(0) == 0
     assert fast_fib(1) == 1

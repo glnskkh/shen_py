@@ -1,3 +1,6 @@
+""" Найдем наибольший общий делитель, сложность O(logn) в худшем случае """
+
+
 def test_gcd_euclid():
     assert gcd_euclid(12, 36) == 12
     assert gcd_euclid(132, 36) == 12

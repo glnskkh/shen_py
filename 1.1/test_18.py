@@ -1,3 +1,6 @@
+""" Нахождение НОД, но за более быстрый O(loglogn) """
+
+
 def test_gcd_two_euclid():
     assert gcd_two_euclid(12, 36) == 12
     assert gcd_two_euclid(132, 36) == 12

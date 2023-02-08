@@ -1,3 +1,6 @@
+""" Определим период ф-ии f: {1..n} -> {1..n}, O(n) вызовов f """
+
+
 def test_func_period():
     assert func_period(lambda n: (n + 1) % 100) == 100
     assert func_period(lambda n: (n + 2) % 50) == 25

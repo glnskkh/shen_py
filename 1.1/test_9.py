@@ -1,3 +1,6 @@
+""" Находим n число фиббоначи за O(n) шагов """
+
+
 def test_fib():
     assert fib(0) == 0
     assert fib(1) == 1

@@ -1,3 +1,6 @@
+""" Предыдущее, но сложность O(n) умножений """
+
+
 def test_rev_fact():
     assert 1.0 == rev_fact(0)
     assert 1.0+1.0 == rev_fact(1)

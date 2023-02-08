@@ -1,3 +1,6 @@
+""" Перевод числа в десятичную систему счисления за O(logn) шагов """
+
+
 def test_decimal():
     assert decimal(12) == "12"
     assert decimal(341) == "341"

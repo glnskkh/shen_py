@@ -1,3 +1,6 @@
+""" Генерируем квадраты всех целых чисел до n за O(n) умножений """
+
+
 def test_dull_squares():
     assert [i for i in dull_squares(4)] == [0, 1, 4, 9, 16]
 

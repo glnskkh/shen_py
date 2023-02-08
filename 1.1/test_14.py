@@ -1,3 +1,6 @@
+""" Наибольший общий делитель, но путем деления, сложность O(loglogn) """
+
+
 def test_gcd_mod_euclid():
     assert gcd_mod_euclid(12, 36) == 12
     assert gcd_mod_euclid(132, 36) == 12

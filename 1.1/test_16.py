@@ -1,3 +1,6 @@
+""" Нахождение НОД и линейной формы НОД, сложность O(loglogn) """
+
+
 def test_gcd_linear_mod_euclid():
     d, x, y = gcd_linear_mod_euclid(12, 36)
     assert d == 12

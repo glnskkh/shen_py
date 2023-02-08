@@ -1,3 +1,6 @@
+""" Поделим a на b за O(log2n) шагов """
+
+
 def test_division():
     assert division(12, 5) == (2, 2)
     assert division(12, 13) == (0, 12)

@@ -1,3 +1,6 @@
+""" Сложим два целых числа a и b за O(b) инкрементов """
+
+
 def test_sum():
     assert summ(2, 2) == 4
     assert summ(1, 3) == 4

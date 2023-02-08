@@ -1,3 +1,6 @@
+""" Возведем целое число в целую степень за O(n) """
+
+
 def test_slow_power():
     assert slow_power(2, 2) == 4
     assert slow_power(12, 2) == 144

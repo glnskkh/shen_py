@@ -1,3 +1,6 @@
+""" Поиск целых решений уравнения x^2 + y^2 < n за O(sqrt(n)) """
+
+
 def test_slow_count_solutions():
     assert fast_count_solutions(1) == 1
     assert fast_count_solutions(2) == 3

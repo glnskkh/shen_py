@@ -1,4 +1,7 @@
-# Часть (a)
+""" Простота и разложение гаусовых чисел (комплексные, но с целыми коэфициентами) """
+
+# Часть (a), сложность O(sqrt(min(a,b))), где a, b - компоненты числа
+
 
 def test_is_gaussian_prime():
     # Составные
@@ -32,8 +35,8 @@ def is_gaussian_prime(c: complex):
 
     return first_rule or second_rule
 
-# Часть (б)
 
+# Часть (б), сложность O(|n|^2), где |n| - модуль числа n
 
 def test_factorize_gaussian():
     # Составные
