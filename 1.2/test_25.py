@@ -15,13 +15,16 @@ def find(list: list[list[int]]) -> int:
     found = False
 
     while not found:
+        # Сдвигаем все индексы так, чтобы ни один из элементов не был меньше другого
         for i in range(len(indecies)):
             for j in range(len(indecies)):
                 if list[i][indecies[i]] < list[j][indecies[j]]:
                     indecies[i] += 1
 
+        # Проверяем, совпали ли элементы
         found = True
         for i in range(1, len(indecies)):
             found = found and list[0][indecies[0]] == list[i][indecies[i]]
 
+    # Элементы совпали -> возвращаем найденый элемент
     return list[0][indecies[0]]
