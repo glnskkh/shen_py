@@ -23,14 +23,14 @@ def test_divide():
 def divide(a: list[int], b: int):
     l, m, r = 0, 0, len(a) - 1
 
-    # a[..l] < b, a[l..m] == b, a[..r] > b
-    while m < r:
-        if a[m + 1] == b:
+    # a[..l] < b, a[l+1..m] == b, a[..r] > b
+    while m <= r:
+        if a[m] == b:
             m += 1
-        elif a[m + 1] > b:
-            a[r], a[m + 1] = a[m + 1], a[r]
-            r -= 1
-        else:  # a[m + 1] < b
-            a[l], a[m + 1] = a[m + 1], a[l]
+        elif a[m] < b:
+            a[l], a[m] = a[m], a[l]
             l += 1
             m += 1
+        else:  # a[m + 1] > b
+            a[r], a[m] = a[m], a[r]
+            r -= 1
